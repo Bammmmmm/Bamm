@@ -10,8 +10,15 @@ export class AppComponent {
   b: string;
 
 bamm(){
+  this.b = this.a;
+  this.a = "";
 
 }
 
+bamm2(){
+  this.a = this.b;
+  this.b = "";
+
+}
   name = 'Angular ' + VERSION.major;
 }
